@@ -1,11 +1,11 @@
 import React from 'react';
 import { Text, Button,StyleSheet,View } from 'react-native';
 
-function WelcomeScreen(navigation) {
+function WelcomeScreen({navigation}) {
     return (
         <View style={styles.container}>
             <Text style={styles.text}>Welcome</Text>
-            <Button title='click me'/>
+            <Button title='click me' onPress={()=> navigation.navigate('Home')}/>
         </View>
         
     
