@@ -1,12 +1,13 @@
 import React from 'react';
 import { useState } from 'react';
-import { Text, Button,StyleSheet,View, TextInput } from 'react-native';
+import { Text, Button,StyleSheet,View, TextInput, Image } from 'react-native';
 
 function WelcomeScreen({navigation}) {
     const [username, setUsername]=useState('')
     const [password, setPassword]= useState('')
     return (
         <View style={styles.container}>
+                        <Image style={{alignSelf:'center',width:170,height:170,bottom:70}} source={require('../assets/login.png')}/>
             <View style={styles.form}>
                 <Text style={styles.label}>Username</Text>
                 <TextInput style={styles.input} placeholder='Enter Username' value={username} onChange={setUsername}/>

@@ -3,35 +3,21 @@ import { ScrollView, Text, View,StyleSheet } from 'react-native';
 
 function CourseScreen() {
     return (
-      <ScrollView style={styles.container}>
-        <View style={styles.list}>
-            <Text style={styles.txt}>Hi</Text>
-            <Text style={styles.txt}>Hi</Text>
+        <ScrollView style={styles.container}>
+            <View style={styles.course}>
+                <Text>Hello</Text>
+                
+                  </View>
 
-
-
-        </View>
-      </ScrollView>
+        </ScrollView>
     );
 }
 const styles = StyleSheet.create({
     container:{
-        backgroundColor:'#89cff0'
+        backgroundColor:'#89cff0',
     },
-    list:{
-        flexDirection:'row',
-        justifyContent:'center',
-        borderRadius:20,
-        
-    },
-    txt:{
-        marginTop:80,
-        margin:20,
-        backgroundColor:"#fff",
-        height:120,
-        width:160,
-        textAlign:'center',
-        
+    course:{
+        flexDirection:'row',justifyContent:'space-around',backgroundColor:'#fff',marginTop:70,height:150,width:170,marginLeft:20,
     }
 })
 export default CourseScreen;
