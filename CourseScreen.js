@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
     list:{
         flexDirection:'row',
         justifyContent:'center',
+        borderRadius:20,
         
     },
     txt:{

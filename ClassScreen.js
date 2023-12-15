@@ -11,31 +11,31 @@ function ClassScreen({navigation}) {
         <TouchableOpacity style={styles.list} onPress={()=>navigation.navigate('Course')}>
             <Text style={styles.lists}>Grade 1</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.list} onPress={()=>navigation.navigate('Home')}>
+        <TouchableOpacity style={styles.list} onPress={()=>navigation.navigate('Course')}>
             <Text style={styles.lists}>Grade 2</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.list} onPress={()=>navigation.navigate('Home')}>
+        <TouchableOpacity style={styles.list} onPress={()=>navigation.navigate('Course')}>
             <Text style={styles.lists}>Grade 3</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.list} onPress={()=>navigation.navigate('Home')}>
+        <TouchableOpacity style={styles.list} onPress={()=>navigation.navigate('Course')}>
             <Text style={styles.lists}>Grade 4</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.list} onPress={()=>navigation.navigate('Home')}>
+        <TouchableOpacity style={styles.list} onPress={()=>navigation.navigate('Course')}>
             <Text style={styles.lists}>Grade 5</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.list} onPress={()=>navigation.navigate('Home')}>
+        <TouchableOpacity style={styles.list} onPress={()=>navigation.navigate('Course')}>
             <Text style={styles.lists}>Grade 6</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.list} onPress={()=>navigation.navigate('Home')}>
+        <TouchableOpacity style={styles.list} onPress={()=>navigation.navigate('Course')}>
             <Text style={styles.lists}>Grade 7</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.list} onPress={()=>navigation.navigate('Home')}>
+        <TouchableOpacity style={styles.list} onPress={()=>navigation.navigate('Course')}>
             <Text style={styles.lists}>Grade 8</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.list} onPress={()=>navigation.navigate('Home')}>
+        <TouchableOpacity style={styles.list} onPress={()=>navigation.navigate('Course')}>
             <Text style={styles.lists}>Grade 9</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.list} onPress={()=>navigation.navigate('Home')}>
+        <TouchableOpacity style={styles.list} onPress={()=>navigation.navigate('Course')}>
             <Text style={styles.lists}>Grade 10</Text>
         </TouchableOpacity>
     </View>
