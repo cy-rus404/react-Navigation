@@ -1,23 +1,49 @@
 import React from 'react';
-import { ScrollView, Text, View,StyleSheet } from 'react-native';
+import { ScrollView, Text, View, StyleSheet, Box, TouchableOpacity } from 'react-native';
 
 function CourseScreen() {
     return (
-        <ScrollView style={styles.container}>
-            <View style={styles.course}>
-                <Text>Hello</Text>
-                
-                  </View>
+        <ScrollView style={styles.contain}>
+        <TouchableOpacity style={styles.container}>
+            <Text style={{backgroundColor:'#fff',marginTop:80,width:170,height:150,marginLeft:20,borderRadius:20,textAlign:'center',justifyContent:'center',overflow:'hidden'}}>Hello
+            </Text>
+            
+            <Text style={{backgroundColor:'#fff',marginTop:80,width:170,height:150,marginLeft:20,borderRadius:20,textAlign:'center',overflow:'hidden'}}>Hello
+            </Text>
 
+        </TouchableOpacity>
+        <View style={styles.container}>
+            <Text style={{backgroundColor:'#fff',marginTop:30,width:170,height:150,marginLeft:20,borderRadius:20,textAlign:'center',justifyContent:'center',overflow:'hidden'}}>Hello
+            </Text>
+            <Text style={{backgroundColor:'#fff',marginTop:30,width:170,height:150,marginLeft:20,borderRadius:20,textAlign:'center',overflow:'hidden'}}>Hello
+            </Text>
+
+        </View>
+        <View style={styles.container}>
+            <Text style={{backgroundColor:'#fff',marginTop:30,width:170,height:150,marginLeft:20,borderRadius:20,textAlign:'center',justifyContent:'center',overflow:'hidden'}}>Hello
+            </Text>
+            <Text style={{backgroundColor:'#fff',marginTop:30,width:170,height:150,marginLeft:20,borderRadius:20,textAlign:'center',alignItems:'center',overflow:'hidden'}}>Hello
+            </Text>
+
+        </View>
+        <View style={styles.container}>
+            <Text style={{backgroundColor:'#fff',marginTop:30,width:170,height:150,marginLeft:20,borderRadius:20,textAlign:'center',justifyContent:'center',overflow:'hidden'}}>Hello
+            </Text>
+            <Text style={{backgroundColor:'#fff',marginTop:30,width:170,height:150,marginLeft:20,borderRadius:20,textAlign:'center',alignItems:'center',overflow:'hidden'}}>Hello
+            </Text>
+
+        </View>
         </ScrollView>
+
     );
 }
 const styles = StyleSheet.create({
-    container:{
-        backgroundColor:'#89cff0',
+    contain:{
+        flex:1,
+        backgroundColor:"#98cff0",
     },
-    course:{
-        flexDirection:'row',justifyContent:'space-around',backgroundColor:'#fff',marginTop:70,height:150,width:170,marginLeft:20,
-    }
+    container:{
+        flexDirection:'row',     
+    },
 })
 export default CourseScreen;
