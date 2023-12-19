@@ -17,7 +17,7 @@ function WelcomeScreen({navigation}) {
     
     return (
         <View style={styles.container}>
-                        <Image style={{alignSelf:'center',width:170,height:170,bottom:70}} source={require('../assets/login.png')}/>
+                        <Image style={{alignSelf:'center',width:170,height:170,bottom:80,}} source={require('../assets/login.png')}/>
             <View style={styles.form}>
                 <Text style={styles.label}>Username</Text>
                 <TextInput style={styles.input} placeholder='Enter Username' value={email} onChangeText={value=>setEmail(value)}/>
