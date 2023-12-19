@@ -7,8 +7,8 @@ function HomeScreen({ navigation }) {
             <Image
                 style={{ width: 100, height: 100,top:20,left:20,borderRadius:20,transform:[
                     {translateX: 20},{translateY:50},{rotate:'-15deg'}
-                ] }} source={require('../Nav/assets/hero1.jpg')} />
-                <Image source={require('../Nav/assets/hero2.jpg')}
+                ] }} source={require('../react-Navigation/assets/hero1.jpg')} />
+                <Image source={require('../react-Navigation/assets/hero2.jpg')}
         style={{
           width: 100,
           height: 100,
@@ -23,7 +23,7 @@ function HomeScreen({ navigation }) {
           ]
         }}
       />
-      <Image source={require('../Nav/assets/hero2.jpg')}
+      <Image source={require('../react-Navigation/assets/hero2.jpg')}
         style={{
           width: 100,
           height: 100,
@@ -39,7 +39,7 @@ function HomeScreen({ navigation }) {
           ]
         }}
       />
-      <Image source={require('../Nav/assets/hero3.jpg')}
+      <Image source={require('../react-Navigation/assets/hero3.jpg')}
         style={{
           width: 200,
           height: 200,

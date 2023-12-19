@@ -3,16 +3,26 @@ import { useState } from 'react';
 import { Text, Button,StyleSheet,View, TextInput, Image } from 'react-native';
 
 function WelcomeScreen({navigation}) {
-    const [username, setUsername]=useState('')
+    const [email, setEmail]=useState('')
     const [password, setPassword]= useState('')
+    const handleSubmit = async () =>{
+        if(email && password){
+            try{
+
+            }catch(err){
+                console.log('got error', err.message);
+            }
+        }
+    }
+    
     return (
         <View style={styles.container}>
                         <Image style={{alignSelf:'center',width:170,height:170,bottom:70}} source={require('../assets/login.png')}/>
             <View style={styles.form}>
                 <Text style={styles.label}>Username</Text>
-                <TextInput style={styles.input} placeholder='Enter Username' value={username} onChange={setUsername}/>
+                <TextInput style={styles.input} placeholder='Enter Username' value={email} onChangeText={value=>setEmail(value)}/>
                 <Text style={styles.label}secureTextEntry>Password</Text>
-                <TextInput style={styles.input} placeholder='Enter Password' value={password}onChange={setPassword} secureTextEntry></TextInput>
+                <TextInput style={styles.input} placeholder='Enter Password' value={password} onChangeText={value=>setPassword(value)} secureTextEntry></TextInput>
                 <Button title='Login' onPress={()=>{navigation.navigate('Class')}}/>
             </View>
         </View>
